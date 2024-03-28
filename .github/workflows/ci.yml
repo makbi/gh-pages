@@ -1,0 +1,22 @@
+name: deployment tutorial
+
+on: push
+
+jobs:
+  my_first_job:
+    name: first job
+    runs-on: ubuntu-22.04
+    steps:
+      - name: my_first_step
+        run: echo "HELLO WORLD !"
+      - name: my_second_step
+        run: echo "HELLO BACK !"
+
+  my_second_job:
+    name: My second job
+    runs-on: ubuntu-22.04
+    steps:
+      - name: my_first_step
+        run: ls
+      - name: my_second_step
+        run: ls -a
