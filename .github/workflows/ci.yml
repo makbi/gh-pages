@@ -19,4 +19,4 @@ jobs:
       - name: my_first_step
         run: date
       - name: my_second_step
-        run: whoami
+        run: pwd
