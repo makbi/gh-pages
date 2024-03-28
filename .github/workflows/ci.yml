@@ -17,6 +17,6 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: my_first_step
-        run: ls
+        run: date
       - name: my_second_step
-        run: ls -a
+        run: whoami
